@@ -1,0 +1,42 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region206/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+2
+(
+    region206_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          12;
+        startFace       3;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region206;
+    }
+    region206_to_region208
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          6;
+        startFace       15;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region208;
+        samplePatch     region208_to_region206;
+    }
+)
+
+// ************************************************************************* //

@@ -1,0 +1,18 @@
+#!/bin/sh
+
+blockMesh
+topoSet
+splitMeshRegions -cellZones -overwrite
+
+topoSet -region anodePart -dict system/topoSet-anodeCellZones
+topoSet -region cathodePart -dict system/topoSet-cathodeCellZones
+
+#topoSet -region anodePart -dict system/topoSetDict-anodeInterfaces
+#topoSet -region cathodePart -dict system/topoSetDict-cathodeInterfaces
+
+setFields -region anodePart
+setFields -region cathodePart
+
+decomposePar -force -allRegions
+
+#------------------------------------------------------------------------------

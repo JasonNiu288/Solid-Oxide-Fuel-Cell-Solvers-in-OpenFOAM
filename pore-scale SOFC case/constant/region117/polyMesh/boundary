@@ -1,0 +1,334 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region117/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+32
+(
+    symmetry_front
+    {
+        type            patch;
+        nFaces          48;
+        startFace       2789;
+    }
+    symmetry_right
+    {
+        type            patch;
+        nFaces          135;
+        startFace       2837;
+    }
+    region117_to_region262
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2972;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region262;
+        samplePatch     region262_to_region117;
+    }
+    region117_to_region310
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       2975;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region310;
+        samplePatch     region310_to_region117;
+    }
+    region117_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          503;
+        startFace       2977;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region117;
+    }
+    region117_to_region229
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          6;
+        startFace       3480;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region229;
+        samplePatch     region229_to_region117;
+    }
+    region117_to_region248
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3486;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region248;
+        samplePatch     region248_to_region117;
+    }
+    region117_to_region328
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3488;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region328;
+        samplePatch     region328_to_region117;
+    }
+    region117_to_region273
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3490;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region273;
+        samplePatch     region273_to_region117;
+    }
+    region117_to_region292
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3493;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region292;
+        samplePatch     region292_to_region117;
+    }
+    region117_to_region167
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3496;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region167;
+        samplePatch     region167_to_region117;
+    }
+    region117_to_region230
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3498;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region230;
+        samplePatch     region230_to_region117;
+    }
+    region117_to_region311
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3501;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region311;
+        samplePatch     region311_to_region117;
+    }
+    region117_to_region312
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3504;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region312;
+        samplePatch     region312_to_region117;
+    }
+    region117_to_region200
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3507;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region200;
+        samplePatch     region200_to_region117;
+    }
+    region117_to_region203
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          16;
+        startFace       3509;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region203;
+        samplePatch     region203_to_region117;
+    }
+    region117_to_region161
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       3525;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region161;
+        samplePatch     region161_to_region117;
+    }
+    region117_to_region189
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3526;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region189;
+        samplePatch     region189_to_region117;
+    }
+    region117_to_region202
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          5;
+        startFace       3528;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region202;
+        samplePatch     region202_to_region117;
+    }
+    region117_to_region163
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       3533;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region163;
+        samplePatch     region163_to_region117;
+    }
+    region117_to_region261
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3534;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region261;
+        samplePatch     region261_to_region117;
+    }
+    region117_to_region228
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          10;
+        startFace       3536;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region228;
+        samplePatch     region228_to_region117;
+    }
+    region117_to_region246
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3546;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region246;
+        samplePatch     region246_to_region117;
+    }
+    region117_to_region166
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3549;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region166;
+        samplePatch     region166_to_region117;
+    }
+    region117_to_Ni
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          408;
+        startFace       3552;
+        sampleMode      nearestPatchFace;
+        sampleRegion    Ni;
+        samplePatch     Ni_to_region117;
+    }
+    region117_to_region274
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3960;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region274;
+        samplePatch     region274_to_region117;
+    }
+    region117_to_region226
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       3963;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region226;
+        samplePatch     region226_to_region117;
+    }
+    region117_to_region165
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          4;
+        startFace       3964;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region165;
+        samplePatch     region165_to_region117;
+    }
+    region117_to_region201
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          4;
+        startFace       3968;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region201;
+        samplePatch     region201_to_region117;
+    }
+    region117_to_region150
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3972;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region150;
+        samplePatch     region150_to_region117;
+    }
+    region117_to_region247
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       3974;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region247;
+        samplePatch     region247_to_region117;
+    }
+    region117_to_region260
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       3976;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region260;
+        samplePatch     region260_to_region117;
+    }
+)
+
+// ************************************************************************* //

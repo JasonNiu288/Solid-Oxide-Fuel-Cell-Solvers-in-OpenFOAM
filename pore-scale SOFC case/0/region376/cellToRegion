@@ -1,0 +1,316 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/region376";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 378;
+
+boundaryField
+{
+    symmetry_left
+    {
+        type            zeroGradient;
+    }
+    region376_to_region553
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region534
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region498
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region493
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region473
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region441
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region530
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region497
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region635
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region492
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region619
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region609
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region451
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region572
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region486
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region449
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region573
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region606
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region574
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region608
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region564
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region568
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region494
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region570
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region495
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region536
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region593
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region528
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region597
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region554
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region552
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region549
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region386
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region443
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region636
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region535
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region392
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region607
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region502
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region555
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region455
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region527
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region416
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region417
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region445
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region424
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region620
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region533
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region526
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region584
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region594
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region579
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region525
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region529
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region376_to_region496
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

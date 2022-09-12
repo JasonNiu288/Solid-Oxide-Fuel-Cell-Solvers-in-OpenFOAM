@@ -1,0 +1,218 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region349/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+20
+(
+    symmetry_back
+    {
+        type            patch;
+        nFaces          250;
+        startFace       3320;
+    }
+    region349_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          575;
+        startFace       3570;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region349;
+    }
+    region349_to_region430
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4145;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region430;
+        samplePatch     region430_to_region349;
+    }
+    region349_to_region395
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       4147;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region395;
+        samplePatch     region395_to_region349;
+    }
+    region349_to_region403
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       4150;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region403;
+        samplePatch     region403_to_region349;
+    }
+    region349_to_region422
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4151;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region422;
+        samplePatch     region422_to_region349;
+    }
+    region349_to_region413
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       4153;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region413;
+        samplePatch     region413_to_region349;
+    }
+    region349_to_region371
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       4154;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region371;
+        samplePatch     region371_to_region349;
+    }
+    region349_to_region429
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4157;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region429;
+        samplePatch     region429_to_region349;
+    }
+    region349_to_region508
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       4159;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region508;
+        samplePatch     region508_to_region349;
+    }
+    region349_to_region446
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4162;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region446;
+        samplePatch     region446_to_region349;
+    }
+    region349_to_region382
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          6;
+        startFace       4164;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region382;
+        samplePatch     region382_to_region349;
+    }
+    region349_to_region431
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4170;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region431;
+        samplePatch     region431_to_region349;
+    }
+    region349_to_region475
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4172;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region475;
+        samplePatch     region475_to_region349;
+    }
+    region349_to_Ni
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          278;
+        startFace       4174;
+        sampleMode      nearestPatchFace;
+        sampleRegion    Ni;
+        samplePatch     Ni_to_region349;
+    }
+    region349_to_region396
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       4452;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region396;
+        samplePatch     region396_to_region349;
+    }
+    region349_to_region428
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4455;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region428;
+        samplePatch     region428_to_region349;
+    }
+    region349_to_region404
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4457;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region404;
+        samplePatch     region404_to_region349;
+    }
+    region349_to_region415
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       4459;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region415;
+        samplePatch     region415_to_region349;
+    }
+    region349_to_region399
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       4461;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region399;
+        samplePatch     region399_to_region349;
+    }
+)
+
+// ************************************************************************* //

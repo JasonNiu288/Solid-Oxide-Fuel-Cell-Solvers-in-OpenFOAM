@@ -1,0 +1,89 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      topoSetDict;
+}
+
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+actions
+(
+    // anode FC
+    {
+        name    anodeFCCellSet;
+        type    cellSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo
+        {
+            box (0  515e-6 -1500e-6 )(0.1   1015e-6    1500e-6 );
+        }
+    }
+    {
+        name anodeFC;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set  anodeFCCellSet;
+        }
+    }
+
+    // anode GDL
+    {
+        name    anodeGDLCellSet;
+        type    cellSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo
+        {
+            box (0   15e-6   -2000e-6 )(0.1    515e-6     2000e-6);
+        }
+    }
+    {
+        name    anodeGDL;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set anodeGDLCellSet;
+        }
+    }
+
+    // anode CL
+    {
+        name    anodeCLCellSet;
+        type    cellSet;
+        action  new;
+        source  boxToCell;
+        sourceInfo
+        {
+            box (0   5e-6   -2000e-6 )(0.1    15e-6     2000e-6);
+        }
+    }
+    {
+        name    anodeCL;
+        type    cellZoneSet;
+        action  new;
+        source  setToCellZone;
+        sourceInfo
+        {
+            set anodeCLCellSet;
+        }
+    }
+
+);
+
+
+// ************************************************************************* //

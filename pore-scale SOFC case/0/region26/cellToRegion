@@ -1,0 +1,136 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/region26";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 27;
+
+boundaryField
+{
+    symmetry_left
+    {
+        type            zeroGradient;
+    }
+    region26_to_region56
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region43
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region95
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region108
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region45
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region27
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region83
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region82
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region35
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region55
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region69
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region34
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region71
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region44
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region70
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region42
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region7
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region72
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region26_to_region36
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

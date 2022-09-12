@@ -1,0 +1,118 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region12/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+10
+(
+    bottom
+    {
+        type            patch;
+        nFaces          141;
+        startFace       2298;
+    }
+    region12_to_region13
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       2439;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region13;
+        samplePatch     region13_to_region12;
+    }
+    region12_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          353;
+        startFace       2441;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region12;
+    }
+    region12_to_region37
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2794;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region37;
+        samplePatch     region37_to_region12;
+    }
+    region12_to_region28
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       2797;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region28;
+        samplePatch     region28_to_region12;
+    }
+    region12_to_region74
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2798;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region74;
+        samplePatch     region74_to_region12;
+    }
+    region12_to_region11
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          120;
+        startFace       2801;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region11;
+        samplePatch     region11_to_region12;
+    }
+    region12_to_Ni
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          43;
+        startFace       2921;
+        sampleMode      nearestPatchFace;
+        sampleRegion    Ni;
+        samplePatch     Ni_to_region12;
+    }
+    region12_to_region75
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2964;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region75;
+        samplePatch     region75_to_region12;
+    }
+    region12_to_region47
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2967;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region47;
+        samplePatch     region47_to_region12;
+    }
+)
+
+// ************************************************************************* //

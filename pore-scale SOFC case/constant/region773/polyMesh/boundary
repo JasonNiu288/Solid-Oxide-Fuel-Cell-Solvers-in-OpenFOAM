@@ -1,0 +1,108 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region773/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+9
+(
+    symmetry_right
+    {
+        type            patch;
+        nFaces          31;
+        startFace       375;
+    }
+    region773_to_membrane
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          68;
+        startFace       406;
+        sampleMode      nearestPatchFace;
+        sampleRegion    membrane;
+        samplePatch     membrane_to_region773;
+    }
+    region773_to_region788
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       474;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region788;
+        samplePatch     region788_to_region773;
+    }
+    region773_to_region786
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       475;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region786;
+        samplePatch     region786_to_region773;
+    }
+    region773_to_region798
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       478;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region798;
+        samplePatch     region798_to_region773;
+    }
+    region773_to_Ni
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          5;
+        startFace       481;
+        sampleMode      nearestPatchFace;
+        sampleRegion    Ni;
+        samplePatch     Ni_to_region773;
+    }
+    region773_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          132;
+        startFace       486;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region773;
+    }
+    region773_to_region598
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          7;
+        startFace       618;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region598;
+        samplePatch     region598_to_region773;
+    }
+    region773_to_region808
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       625;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region808;
+        samplePatch     region808_to_region773;
+    }
+)
+
+// ************************************************************************* //

@@ -1,0 +1,62 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/anodeBP/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+6
+(
+    inlet_anode
+    {
+        type            patch;
+        nFaces          190;
+        startFace       52310;
+    }
+    outlet_anode
+    {
+        type            patch;
+        nFaces          190;
+        startFace       52500;
+    }
+    symmetry_left
+    {
+        type            patch;
+        nFaces          1000;
+        startFace       52690;
+    }
+    symmetry_right
+    {
+        type            patch;
+        nFaces          1000;
+        startFace       53690;
+    }
+    top
+    {
+        type            patch;
+        nFaces          3000;
+        startFace       54690;
+    }
+    anodeBP_to_anodePart
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          4000;
+        startFace       57690;
+        sampleMode      nearestPatchFace;
+        sampleRegion    anodePart;
+        samplePatch     anodePart_to_anodeBP;
+    }
+)
+
+// ************************************************************************* //

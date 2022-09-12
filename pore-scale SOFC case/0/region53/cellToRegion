@@ -1,0 +1,105 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/region53";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 54;
+
+boundaryField
+{
+    symmetry_front
+    {
+        type            zeroGradient;
+    }
+    symmetry_left
+    {
+        type            zeroGradient;
+    }
+    region53_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region54
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region33
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region106
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region92
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region162
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region188
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region93
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region133
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region132
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region91
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region114
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region53_to_region107
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,45 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      transportProperties;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+P_IN                       P_IN [0 0 0 0 0 0 0] 101325;   //inlet pressure
+T_IN                       T_IN [0 0 0 0 0 0 0] 1073;     //inlet temperature
+
+// mole fractio for inlet species, different from Niu's code, where molar concentration was used
+MOLE_FRACTION_H2_INLET     MOLE_FRACTION_H2_INLET [0 -1 0 0 0 0 0]  0.595;  
+MOLE_FRACTION_CO_INLET     MOLE_FRACTION_CO_INLET [0 -1 0 0 0 0 0]  0.13;
+MOLE_FRACTION_CH4_INLET    MOLE_FRACTION_CH4_INLET [0 -1 0 0 0 0 0] 0.001; 
+
+MOLE_FRACTION_O2_INLET     MOLE_FRACTION_O2_INLET [0 -1 0 0 0 0 0]   0.21; 
+MOLE_FRACTION_H2O_INLET    MOLE_FRACTION_H2O_INLET [0 -1 0 0 0 0 0]  0.223;  //anode side 
+
+A_ACT                A_ACT [0 -1 0 0 0 0 0]   4e-4;              // active reaction area such as 0.1 * 4e-3
+FC_CROSS_SECTION     FC_CROSS_SECTION [0 -1 0 0 0 0 0]  1.5e-6;  //cross section of flow channel, such as 0.5e-3 * 3e-3
+
+tau_potential        tau_potential [0 -1 0 0 0 0 0] 1e9;
+
+I_REF                I_REF [0 -1 0 0 0 0 0]   2000.0;   //reference current density
+U_F                  U_F   [0 -1 0 0 0 0 0]   0.7;     //fuel utilization
+lamda_AIR            lamda_AIR   [0 -1 0 0 0 0 0]   9; //air ratio
+
+
+K_p_GDL              K_p_GDL [0 2 0 0 0 0 0] 2e-12;   //intrinsic permeability GDL
+K_p_CL               K_p_CL [0 2 0 0 0 0 0] 1e-13;   //intrinsic permeability CL
+
+
+
+
+// ************************************************************************* //

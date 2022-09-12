@@ -1,0 +1,59 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "system";
+    object      setFieldsDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+defaultFieldValues
+(
+    volScalarFieldValue alpha_Fai_ele 1
+    volScalarFieldValue grad_alpha_Fai_ele 0
+    volScalarFieldValue alpha_Fai_ion 1
+    volScalarFieldValue grad_alpha_Fai_ion 0
+
+);
+
+regions
+(
+//==========set alpha and grad_alpha for Fai_ele, lamda and alpha_mem=========
+        boxToCell    //anodeFC
+       {
+            box (0  -555e-6 -1500e-6 )(0.1   -55e-6    1500e-6 );
+            fieldValues
+            (
+              volScalarFieldValue alpha_Fai_ele 0
+              volScalarFieldValue grad_alpha_Fai_ele 1
+              volScalarFieldValue alpha_Fai_ion 0
+              volScalarFieldValue grad_alpha_Fai_ion 1
+
+
+            );
+        }
+
+        boxToCell    // thickness for one layer in GDL; (thickness for GDL=40 um, 10 mesh)
+       {
+            box (0  -55e-6 -2000e-6 )(0.1   -15e-6    2000e-6 );
+            fieldValues
+            (
+              volScalarFieldValue alpha_Fai_ion 0
+              volScalarFieldValue grad_alpha_Fai_ion 1
+
+
+            );
+        }
+
+);
+
+
+// ************************************************************************* //

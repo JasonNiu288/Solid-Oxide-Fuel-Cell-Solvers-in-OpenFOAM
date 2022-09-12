@@ -1,0 +1,78 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region500/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+6
+(
+    symmetry_back
+    {
+        type            patch;
+        nFaces          103;
+        startFace       1096;
+    }
+    region500_to_region540
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       1199;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region540;
+        samplePatch     region540_to_region500;
+    }
+    region500_to_Ni
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          181;
+        startFace       1200;
+        sampleMode      nearestPatchFace;
+        sampleRegion    Ni;
+        samplePatch     Ni_to_region500;
+    }
+    region500_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          212;
+        startFace       1381;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region500;
+    }
+    region500_to_membrane
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          80;
+        startFace       1593;
+        sampleMode      nearestPatchFace;
+        sampleRegion    membrane;
+        samplePatch     membrane_to_region500;
+    }
+    region500_to_region539
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       1673;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region539;
+        samplePatch     region539_to_region500;
+    }
+)
+
+// ************************************************************************* //

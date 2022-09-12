@@ -1,0 +1,150 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    location    "constant";
+    object      thermo.compressibleGas;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+H2
+{
+    specie
+    {
+
+        molWeight       2.01594;
+    }
+    thermodynamics
+    {
+         Cp             14110;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+H2O
+{
+    specie
+    {
+        molWeight       18.0153;
+    }
+    thermodynamics
+    {
+         Cp             1850;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+N2
+{
+    specie
+    {
+        molWeight       28.0134;
+    }
+    thermodynamics
+    {
+         Cp             1038;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+CO
+{
+    specie
+    {
+
+        molWeight       28.0104;
+    }
+    thermodynamics
+    {
+         Cp             1040;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+CO2
+{
+    specie
+    {
+
+        molWeight       44.01;
+    }
+    thermodynamics
+    {
+         Cp             840;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+
+CH4
+{
+    specie
+    {
+
+        molWeight       20.07476;
+    }
+    thermodynamics
+    {
+         Cp             2231;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+O2
+{
+    specie
+    {
+        molWeight       31.9988;
+    }
+    thermodynamics
+    {
+         Cp             909;
+         Hf             2.544e6;
+    }
+    transport
+    {
+        mu              1.8e-5;
+        Pr              0.7;
+    }
+}
+
+
+// ************************************************************************* //

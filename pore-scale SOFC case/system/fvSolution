@@ -1,0 +1,93 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+PIMPLE
+{
+    momentumPredictor   yes;
+    nNonOrthogonalCorrectors 0;
+    nCorrectors          2;
+    nOuterCorrectors     1;
+
+    residualControl
+    {
+        rho             1e-6;
+        p_rgh           1e-6;
+        U               1e-6;
+        h               1e-6;
+        e               1e-6;
+        Yi              1e-6;
+        Fai_ion         1e-6;
+        Fai_ele         1e-6;
+        lamda           1e-6;
+        C               1e-6;
+
+       
+    }
+
+    outerCorrectorResidualControl
+    {
+        "(rho|p_rgh|U|Yi|C|Fai_ion|Fai_ele|lamda)"
+        {
+            relTol          0;
+            tolerance       1e-6;
+        }
+    }
+
+
+   relaxationFactors
+   {
+       fields
+       {
+           "rho.*"         0.500;
+           "p_rgh.*"       0.300;
+       }
+       equations
+       {
+           U               0.5;
+           Yi              0.500;
+           h               0.800;
+           Fai_ion         0.500;
+           Fai_ele         0.500;
+           lamda           0.3;
+           pl              0.300;
+           C               1;
+           
+       }
+    }
+}
+
+relaxationFactors
+{
+    fields
+    {
+        rho         0.500;
+        p_rgh       0.300;
+    }
+    equations
+    {
+        "U.*"           0.5;
+        "(h|e).*"       0.800;
+        "k.*"           0.500;
+        "epsilon.*"     0.500;
+         Fai_ion         0.500;
+         Fai_ele         0.500;
+         lamda           0.3;
+         pl              0.300;
+    }
+}
+
+
+// ************************************************************************* //

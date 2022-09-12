@@ -1,0 +1,511 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/pore";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 355;
+
+boundaryField
+{
+    symmetry_right
+    {
+        type            zeroGradient;
+    }
+    pore_to_region665
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region571
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region438
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region600
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region667
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region613
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region354
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region418
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region450
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region470
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region611
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region566
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region457
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region556
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region420
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region348
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region531
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region421
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region427
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region632
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region550
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region442
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region643
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region355
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region435
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region419
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region565
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region537
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region439
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region394
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region623
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region602
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region588
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region499
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region503
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region453
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region548
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region580
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region426
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region539
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region500
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region409
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region458
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region471
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region596
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region401
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region538
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region391
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region385
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region387
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region425
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region532
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region367
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region407
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region637
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region589
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region472
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region485
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region622
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region603
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region625
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region621
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region366
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region675
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region633
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region462
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region664
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region454
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region595
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region459
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region440
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region599
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region408
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region379
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region400
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region390
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region456
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region460
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region666
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region444
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region381
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region624
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region540
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region461
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region380
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region452
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region610
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region434
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region634
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region433
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region631
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region501
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region678
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    pore_to_region569
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,66 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/region313";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 314;
+
+boundaryField
+{
+    symmetry_left
+    {
+        type            zeroGradient;
+    }
+    region313_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region313_to_region377
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region313_to_region372
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region313_to_region384
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region313_to_region374
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region313_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region313_to_region373
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

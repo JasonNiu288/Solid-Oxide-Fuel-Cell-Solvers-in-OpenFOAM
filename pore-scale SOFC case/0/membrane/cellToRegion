@@ -1,0 +1,152 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/membrane";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 559;
+
+boundaryField
+{
+    symmetry_front
+    {
+        type            zeroGradient;
+    }
+    symmetry_back
+    {
+        type            zeroGradient;
+    }
+    symmetry_left
+    {
+        type            zeroGradient;
+    }
+    symmetry_right
+    {
+        type            zeroGradient;
+    }
+    top
+    {
+        type            zeroGradient;
+    }
+    membrane_to_region553
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region531
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region503
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region327
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region500
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region441
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region527
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region550
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region546
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region537
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region555
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region554
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region549
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region507
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region552
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region535
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region556
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region551
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    membrane_to_region515
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

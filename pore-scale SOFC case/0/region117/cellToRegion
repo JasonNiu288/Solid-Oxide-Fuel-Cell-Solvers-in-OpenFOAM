@@ -1,0 +1,185 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/region117";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 118;
+
+boundaryField
+{
+    symmetry_front
+    {
+        type            zeroGradient;
+    }
+    symmetry_right
+    {
+        type            zeroGradient;
+    }
+    region117_to_region262
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region310
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region229
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region248
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region328
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region273
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region292
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region167
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region230
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region311
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region312
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region200
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region203
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region161
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region189
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region202
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region163
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region261
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region228
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region246
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region166
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_Ni
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region274
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region226
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region165
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region201
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region150
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region247
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    region117_to_region260
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

@@ -1,0 +1,272 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       volScalarField;
+    location    "0/Ni";
+    object      cellToRegion;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+dimensions      [0 0 0 0 0 0 0];
+
+internalField   uniform 1;
+
+boundaryField
+{
+    symmetry_front
+    {
+        type            zeroGradient;
+    }
+    symmetry_back
+    {
+        type            zeroGradient;
+    }
+    symmetry_left
+    {
+        type            zeroGradient;
+    }
+    symmetry_right
+    {
+        type            zeroGradient;
+    }
+    bottom
+    {
+        type            zeroGradient;
+    }
+    Ni_to_region21
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region692
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region283
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_membrane
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_pore
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region53
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region582
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region94
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region26
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region187
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region208
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region244
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region705
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region700
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region376
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region184
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region396
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region406
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region389
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region361
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region286
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region448
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region313
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region329
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region576
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region375
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_YSZ
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region293
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region355
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region364
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region612
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region463
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region12
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region349
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region30
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region117
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region534
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region684
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region85
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region6
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region575
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region672
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region295
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region2
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    Ni_to_region542
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+}
+
+
+// ************************************************************************* //

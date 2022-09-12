@@ -1,0 +1,75 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       labelList;
+    note        "nPoints:41  nCells:10  nFaces:50  nInternalFaces:10";
+    location    "constant/region630/polyMesh";
+    object      owner;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+
+50
+(
+0
+1
+2
+2
+4
+5
+5
+5
+6
+8
+0
+0
+0
+2
+3
+4
+2
+5
+2
+3
+4
+4
+4
+7
+7
+8
+9
+8
+8
+9
+0
+1
+0
+2
+3
+1
+4
+1
+1
+6
+7
+3
+3
+6
+6
+7
+7
+8
+9
+9
+)
+
+
+// ************************************************************************* //

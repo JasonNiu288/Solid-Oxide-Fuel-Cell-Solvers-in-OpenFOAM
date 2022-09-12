@@ -1,0 +1,131 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      blockMeshDict;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+convertToMeters 1e-6;
+
+vertices
+(
+
+// anode
+    (0       0       0)    //0
+    (4.16    0       0)    //1
+    (4.16    4.16       0)    //2
+    (0       4.16       0)    //3
+
+// 1 membrane
+    (0       0     4.16)    //4
+    (4.16    0     4.16)    //5
+    (4.16    4.16     4.16)    //6
+    (0       4.16     4.16)    //7
+// membrane top
+    (0       0     4.29)    //8
+    (4.16    0     4.29)    //9
+    (4.16    4.16     4.29)    //10
+    (0       4.16     4.29)    //11
+
+
+);
+
+blocks
+(
+    //anode  
+    hex (0 1 2 3 4 5 6 7) (64 64 64) simpleGrading (1 1 1)
+    //electrolyte
+    hex (4 5 6 7 8 9 10 11) (64 64 10) simpleGrading (1 1 1)
+
+);
+
+edges
+(
+);
+
+boundary
+(
+    symmetry_front
+    {
+        type patch;
+        faces
+        (
+(	0	4	5	1	)
+(	4	8	9	5	)
+
+        );
+    }
+
+    symmetry_back
+    {
+        type patch;
+        faces
+        (
+(	3	7	6	2	)
+(	7	11	10	6	)
+
+        );
+    }
+
+    symmetry_left
+    {
+        type patch;
+        faces
+        (
+(	0	3	7	4	)
+(	4	7	8	11	)
+
+        );
+    }
+
+    symmetry_right
+    {
+        type patch;
+        faces
+        (
+(	1	2	6	5	)
+(	5	6	10	9	)
+
+        );
+    }
+    
+
+
+    top
+    {
+        type patch;
+        faces
+        (
+(	8	9	10	11	)
+
+
+        );
+    }
+
+    bottom
+    {
+        type patch;
+        faces
+        (
+(	0	1	2	3	)
+
+
+        );
+    }
+
+);
+
+mergePatchPairs
+(
+);
+
+// ************************************************************************* //

@@ -1,0 +1,78 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/cathodePart/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+8
+(
+    inlet_cathode
+    {
+        type            patch;
+        nFaces          220;
+        startFace       239180;
+    }
+    outlet_cathode
+    {
+        type            patch;
+        nFaces          220;
+        startFace       239400;
+    }
+    inlet_side
+    {
+        type            patch;
+        nFaces          600;
+        startFace       239620;
+    }
+    outlet_side
+    {
+        type            patch;
+        nFaces          600;
+        startFace       240220;
+    }
+    symmetry_left
+    {
+        type            patch;
+        nFaces          2000;
+        startFace       240820;
+    }
+    symmetry_right
+    {
+        type            patch;
+        nFaces          2000;
+        startFace       242820;
+    }
+    cathodePart_to_cathodeBP
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          5000;
+        startFace       244820;
+        sampleMode      nearestPatchFace;
+        sampleRegion    cathodeBP;
+        samplePatch     cathodeBP_to_cathodePart;
+    }
+    cathodePart_to_membrane
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3000;
+        startFace       249820;
+        sampleMode      nearestPatchFace;
+        sampleRegion    membrane;
+        samplePatch     membrane_to_cathodePart;
+    }
+)
+
+// ************************************************************************* //

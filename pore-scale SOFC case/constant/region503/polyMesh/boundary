@@ -1,0 +1,158 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       polyBoundaryMesh;
+    location    "constant/region503/polyMesh";
+    object      boundary;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+14
+(
+    symmetry_right
+    {
+        type            patch;
+        nFaces          17;
+        startFace       2237;
+    }
+    region503_to_region530
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2254;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region530;
+        samplePatch     region530_to_region503;
+    }
+    region503_to_region544
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          1;
+        startFace       2257;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region544;
+        samplePatch     region544_to_region503;
+    }
+    region503_to_membrane
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          150;
+        startFace       2258;
+        sampleMode      nearestPatchFace;
+        sampleRegion    membrane;
+        samplePatch     membrane_to_region503;
+    }
+    region503_to_region553
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2408;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region553;
+        samplePatch     region553_to_region503;
+    }
+    region503_to_region524
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          4;
+        startFace       2411;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region524;
+        samplePatch     region524_to_region503;
+    }
+    region503_to_region521
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2415;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region521;
+        samplePatch     region521_to_region503;
+    }
+    region503_to_region529
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          22;
+        startFace       2418;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region529;
+        samplePatch     region529_to_region503;
+    }
+    region503_to_YSZ
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          248;
+        startFace       2440;
+        sampleMode      nearestPatchFace;
+        sampleRegion    YSZ;
+        samplePatch     YSZ_to_region503;
+    }
+    region503_to_region547
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          2;
+        startFace       2688;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region547;
+        samplePatch     region547_to_region503;
+    }
+    region503_to_region531
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          60;
+        startFace       2690;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region531;
+        samplePatch     region531_to_region503;
+    }
+    region503_to_region532
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          5;
+        startFace       2750;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region532;
+        samplePatch     region532_to_region503;
+    }
+    region503_to_region525
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          3;
+        startFace       2755;
+        sampleMode      nearestPatchFace;
+        sampleRegion    region525;
+        samplePatch     region525_to_region503;
+    }
+    region503_to_Ni
+    {
+        type            mappedWall;
+        inGroups        1(wall);
+        nFaces          345;
+        startFace       2758;
+        sampleMode      nearestPatchFace;
+        sampleRegion    Ni;
+        samplePatch     Ni_to_region503;
+    }
+)
+
+// ************************************************************************* //

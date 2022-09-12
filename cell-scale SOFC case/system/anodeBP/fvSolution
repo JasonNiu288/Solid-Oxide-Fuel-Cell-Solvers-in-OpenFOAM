@@ -1,0 +1,111 @@
+/*--------------------------------*- C++ -*----------------------------------*\
+  =========                 |
+  \\      /  F ield         | OpenFOAM: The Open Source CFD Toolbox
+   \\    /   O peration     | Website:  https://openfoam.org
+    \\  /    A nd           | Version:  6
+     \\/     M anipulation  |
+\*---------------------------------------------------------------------------*/
+FoamFile
+{
+    version     2.0;
+    format      ascii;
+    class       dictionary;
+    object      fvSolution;
+}
+// * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
+
+solvers
+{
+    h
+    {
+        solver           PCG;
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0.1;
+    }
+
+    hFinal
+    {
+        $h;
+        tolerance        1e-06;
+        relTol           0;
+    }
+    "(C|G|lamda)"
+    {
+        solver           PBiCGStab;
+        preconditioner   DILU;//diagonal;
+        tolerance        1e-9;
+        relTol           0.0001;
+
+    }
+
+    "(C|G|lamda)Final"
+    {
+        $C;
+        tolerance        1e-09;
+        relTol           0;
+    }
+
+    "(Fai_ion|Fai_ele|TNiu)"
+    {
+        solver           PCG;
+        preconditioner   DIC;
+        tolerance        1e-06;
+        relTol           0.1;
+
+    }
+
+    "(Fai_ion|Fai_ele|TNiu)Final"
+    {
+        $h;
+        tolerance        1e-06;
+        relTol           0;
+    }
+
+
+}
+
+PIMPLE
+{
+    nNonOrthogonalCorrectors 0;
+
+   relaxationFactors
+   {
+       fields
+       {
+           "rho.*"         1;
+           "p_rgh.*"       0.7;
+       }
+       equations
+       {
+           "(h|e).*"       0.8;
+            Fai_ion         0.9;
+            Fai_ele         0.9;
+            lamda           1;
+            C               1;
+       }
+   }
+
+}
+
+   relaxationFactors
+   {
+       fields
+       {
+
+       }
+       equations
+       {
+           "(h|e).*"        0.8;
+            Fai_ion         0.9;
+            Fai_ele         0.9;
+            lamda           1;
+            C               1;
+       }
+   }
+
+
+
+
+
+// ************************************************************************* //

@@ -1,0 +1,27 @@
+#!/bin/bash
+
+for filename in $(ls ~/Desktop/repeat_64x64/system/all_topoSetDicts_3D/);
+do
+
+    echo $filename
+
+    cd ~/Desktop/repeat_64x64
+    
+    blockMesh
+    topoSet -dict system/all_topoSetDicts_3D/$filename
+    splitMeshRegions -cellZones -overwrite
+    microFOAM > log.MicroFOAM
+
+
+    sed -i "s/Time = 1anode current density:/$filename.tif: /" /home/zq/Desktop/repeat_64x64/results.txt
+    rm -rf ~/Desktop/repeat_64x64/system/all_topoSetDicts_3D/$filename
+
+
+
+
+done
+
+
+
+
+
