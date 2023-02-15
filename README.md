@@ -4,3 +4,5 @@ This repository includes two SOFC solvers in both cell- and pore-scale, which ar
 If you feel these models and code are helpful for your research and project developmemnt, we will sincerely appreciate it if you could please cite the following journal paper and rate the repository with a star:
 
 "An open source framework for advanced Multi-physics and multiscale modelling of solid oxide fuel cells. Energy Conversion and Management, 280, 15, 2023, 116791" which was implemented by Dr Wanhui Zhao and Dr Zhiqiang Niu.
+
+We will keep updating the code to further improve the code structures and embed more functions and SOFC modelling aspects. Welcome any efforsts to substantially contributing to the development of these SOFC solvers!
